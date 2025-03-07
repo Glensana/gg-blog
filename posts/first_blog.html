@@ -80,11 +80,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Our First Blog! – GG Blog">
 <meta property="og:description" content="Establishing the format we want to follow to use this blog.">
-<meta property="og:image" content="../gifs/flower.gif">
+<meta property="og:image" content="https://Glensana.github.io/gg-blog/gifs/flower.gif">
 <meta property="og:site_name" content="GG Blog">
 <meta name="twitter:title" content="Our First Blog! – GG Blog">
 <meta name="twitter:description" content="Establishing the format we want to follow to use this blog.">
-<meta name="twitter:image" content="../gifs/flower.gif">
+<meta name="twitter:image" content="https://Glensana.github.io/gg-blog/gifs/flower.gif">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -271,7 +271,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/Glensana\.github\.io\/gg-blog\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -600,7 +600,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
